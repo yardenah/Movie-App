@@ -42,7 +42,7 @@ async function displayPopularShows() {
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
-          <a href="movie-details.html?id=${show.id}">
+          <a href="tv-details.html?id=${show.id}">
             ${
                 show.poster_path 
                 ? `<img
@@ -73,6 +73,9 @@ async function displayMovieDetails() {
     const movieID = window.location.search.split('=')[1];
     
     const movie = await fetchAPIData(`movie/${movieID}`);
+
+    //Overlay For Background Image
+    displayBackgroundImage('movie',movie.backdrop_path);
 
     const div = document.createElement('div');
     div.innerHTML = `
@@ -121,8 +124,19 @@ async function displayMovieDetails() {
         </div>`; 
 
     document.querySelector('#movie-details').appendChild(div);
-    
+}
 
+// Display Backdrop On Details Page
+function displayBackgroundImage(type, backgroundPath) {
+  const overlayDiv = document.createElement('div');
+  overlayDiv.style.backgroundImage = `url(https://image.tmdb.org/t/p/original/${backgroundPath})`;
+  overlayDiv.classList.add('overlay-div');
+
+  if (type === 'movie') {
+    document.querySelector('#movie-details').appendChild(overlayDiv);
+  } else {
+    document.querySelector('#show-details').appendChild(overlayDiv);
+  }
 }
 
 //Fetch Data from TMDB API
