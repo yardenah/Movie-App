@@ -6,13 +6,13 @@ Welcome to **Flixx** — a simple web app for browsing, searching, and viewing d
 
 ![movieapp2](images/movieapp2.PNG)
 
-
 ---
 
 ## 🚀 Overview
 
 Flixx is built with **Vanilla JavaScript**, HTML & CSS.  
 It uses the TMDB REST API to fetch:
+
 - Popular movies (`/movie/popular`)
 - Popular TV shows (`/tv/popular`)
 - Single movie details (`/movie/{id}`)
@@ -35,17 +35,19 @@ It uses the TMDB REST API to fetch:
 
 ## ⚙️ Usage
 
-1. **Clone or download** this repo  
-2. **Add your TMDB API key** inside `script.js` under the `global` config  
-3. **Open `index.html`** in your browser  
-4. **Browse** movies, shows or search by keywords!
+1. **Visit the live site:** [Flixx is live here! 🌐](https://flixx-9qo3.onrender.com/)
+2. Or **clone or download** this repo to run locally
+3. Add your **TMDB API key** inside `script.js` under the `global` config (only needed if you run locally)
+4. Open `index.html` in your browser
+5. **Browse** movies, shows or search by keywords!
+
 
 ---
 
 ## ✅ Credits
 
-- [The Movie Database (TMDB)](https://www.themoviedb.org/) — for the API  
-- [Swiper.js](https://swiperjs.com/) — for the slider  
+- [The Movie Database (TMDB)](https://www.themoviedb.org/) — for the API
+- [Swiper.js](https://swiperjs.com/) — for the slider
 - [Font Awesome](https://fontawesome.com/) — for icons
 
 ---
@@ -54,5 +56,3 @@ It uses the TMDB REST API to fetch:
 
 This project is for **learning & demonstration purposes** only.  
 Feel free to **customize and extend** it for your own use!
-
-
