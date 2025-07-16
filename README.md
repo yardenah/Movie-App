@@ -2,9 +2,9 @@
 
 Welcome to **Flixx** — a simple web app for browsing, searching, and viewing details about popular movies and TV shows using **The Movie Database (TMDB) API**.
 
-![movieapp1](images/movieapp1.png)
+![movieapp1](images/movieapp1.PNG)
 
-![movieapp2](images/movieapp2.png)
+![movieapp2](images/movieapp2.PNG)
 
 
 ---
